@@ -37,17 +37,3 @@ Sou **Carlos Vítor**, estudante de **Ciência da Computação**, apaixonado por
 - **Tecnologias** — ícones das stacks e ferramentas que domino
 - **Contato** — e-mail, LinkedIn, GitHub e WhatsApp com ícones
 
----
-
-## 📸 Imagem do portfólio
-
-<img src="imgs/capa-readme.png" alt="Screenshot do portfólio" width="700"/>
-
----
-
-## 🧰 Como rodar localmente
-
-```bash
-git clone https://github.com/seuusuario/portfolio.git
-cd portfolio
-# Abrir o index.html no navegador ou usar Live Server (VSCode)
