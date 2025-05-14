@@ -1,0 +1,205 @@
+/* ===================================== */
+/* 1. VARIÁVEIS DE TEMA (MODO CLARO)     */
+/* ===================================== */
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --card: #fff;
+  --accent: #333;
+  --link: #007bff;
+}
+
+/* ===================================== */
+/* 2. TEMA ESCURO AUTOMÁTICO (SISTEMA)   */
+/* ===================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #f4f4f4;
+    --card: #1e1e1e;
+    --accent: #00bfff;
+    --link: #4aa3ff;
+  }
+}
+
+/* ===================================== */
+/* 3. ESTRUTURA GERAL                    */
+/* ===================================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===================================== */
+/* 4. CABEÇALHO (HEADER) E NAVEGAÇÃO     */
+/* ===================================== */
+header {
+  background: var(--accent);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ===================================== */
+/* 5. SEÇÕES GERAIS                      */
+/* ===================================== */
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===================================== */
+/* 6. SWIPER E PROJETOS                  */
+/* ===================================== */
+.swiper {
+  padding: 40px 0;
+}
+
+.swiper-slide {
+  background: var(--card);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.projeto img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.projeto h3 {
+  margin: 10px 0 5px;
+}
+
+.projeto p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ===================================== */
+/* 7. BOTÕES GERAIS                      */
+/* ===================================== */
+.projeto a,
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.projeto a:hover,
+.btn:hover {
+  background-color: var(--link);
+}
+
+/* ===================================== */
+/* 8. BOTÃO DE TROCA DE TEMA            */
+/* ===================================== */
+#toggle-dark-mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--card);
+  color: var(--text);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+/* ===================================== */
+/* 9. RODAPÉ (FOOTER)                    */
+/* ===================================== */
+footer {
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2);
+}
+
+footer .social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+/* ===================================== */
+/* 10. TEMA CLARO/ESCURO MANUAL         */
+/* ===================================== */
+body.light {
+  --bg: #f4f4f4;
+  --text: #333;
+  --card: #fff;
+  --accent: #333;
+  --link: #007bff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f4f4f4;
+  --card: #1e1e1e;
+  --accent: #00bfff;
+  --link: #4aa3ff;
+}
+
+/* ===================================== */
+/* 11. RESPONSIVIDADE                    */
+/* ===================================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .projeto img {
+    max-height: 150px;
+  }
+}
