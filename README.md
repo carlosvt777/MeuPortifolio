@@ -8,7 +8,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto reúne informações sobre mim
 
 ## 🌐 Acesse agora
 
-🔗 [[(https://meu-portifolio-i1b6.vercel.app/))](https://meu-portifolio-i1b6.vercel.app/) <!-- Substitua com o link real do Vercel -->
+🔗(https://meu-portifolio-cfx3.vercel.app/) <!-- Substitua com o link real do Vercel -->
 
 ---
 
